@@ -1,28 +1,62 @@
-# this is the calculator file created in python
+# TODO: interface 
 
-class Inp: 
+class interface:
+
+     a = input("please enter your fisrt no.: \n")
+
+     b = input("please enter your operator: \n")
+
+     c = input("please enter your second no.: \n")
+    
+     def __init__(self):
+
+        print("*"*20)
+
+        # return True
+
+# TODO: functionality
+
+class function:
 
     def __init__(self):
-    
-        a = input("please input your first no. ");
 
-        b = input("please input your operation: ");
+        inf = interface()
+        
+        num1 = inf.a
+        op = inf.b
+        num2 = inf.c
 
-        c = input("please input your second no. ");
+        if op == '+':
+       
+            result = int(num1) + int(num2)
 
-        return False
+            print("result: "+str(result))
 
-class function(Inp):
+        elif op == '-':
+            
+            result = int(num1) - int(num2)
 
-    # = Inp();
+            print("result: "+str(result))
 
-    # d = b;
-    # e = a;
-    # f = c;
+        elif op == '*':
 
-    # TODO: program function
-    
-    def program(d):
-        pass       
+            result = int(num1) * int(num2)
 
-class calcutor(function):  print("hello");
+            print("result: "+str(result))
+
+        elif op == '/':
+
+            result = int(num1) / int(num2)
+
+            print("result: "+str(result))
+
+        else:
+
+            print("Enter an valid operator")
+            
+        print("*"*20)
+
+        # return True
+
+
+fun = function()
